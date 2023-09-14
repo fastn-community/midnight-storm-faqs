@@ -1,0 +1,49 @@
+-- import: fastn-community.github.io/faqs-doc/docs
+-- import: __user_name__.github.io/__repo_name__
+-- import: fastn-community.github.io/faqs-doc/data
+export: faq
+
+
+
+;; ---------------- DOCUMENTATION FOR YOUR HEADER COMPONENTS ----------------------
+;; This renders the default documentation
+
+-- docs.home:
+package-name: __repo_name__
+package-full-name: __user_name__.github.io/__repo_name__
+github: https://github.com/__user_name__/__repo_name__
+category: __user_name__.github.io/__repo_name__
+license-url: https://github.com/__user_name__/__repo_name__/blob/main/LICENSE
+
+
+
+
+
+
+
+
+
+
+-- component faqs:
+caption title:
+optional body subtitle:
+data.faq list faq-list:
+
+;; =============================================================================
+;; =====================<IMPLEMENT THE FAQ HERE>=========================
+;; =============================================================================
+
+-- ftd.text: Implement the **Faq** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: faqs

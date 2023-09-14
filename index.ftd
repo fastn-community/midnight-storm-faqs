@@ -1,5 +1,6 @@
 -- import: fastn-community.github.io/faqs-doc/docs
--- import: __user_name__.github.io/__repo_name__
+-- import: fastn-community.github.io/midnight-storm-faqs
+-- import: fastn-community.github.io/midnight-storm-faqs/components
 -- import: fastn-community.github.io/faqs-doc/data
 export: faq
 
@@ -9,11 +10,11 @@ export: faq
 ;; This renders the default documentation
 
 -- docs.home:
-package-name: __repo_name__
-package-full-name: __user_name__.github.io/__repo_name__
-github: https://github.com/__user_name__/__repo_name__
-category: __user_name__.github.io/__repo_name__
-license-url: https://github.com/__user_name__/__repo_name__/blob/main/LICENSE
+package-name: midnight-storm-faqs
+package-full-name: fastn-community.github.io/midnight-storm-faqs
+github: https://github.com/fastn-community/midnight-storm-faqs
+category: fastn-community.github.io/midnight-storm-faqs
+license-url: https://github.com/fastn-community/midnight-storm-faqs/blob/main/LICENSE
 
 
 
@@ -29,21 +30,8 @@ caption title:
 optional body subtitle:
 data.faq list faq-list:
 
-;; =============================================================================
-;; =====================<IMPLEMENT THE FAQ HERE>=========================
-;; =============================================================================
-
--- ftd.text: Implement the **Faq** component here
-color: $inherited.colors.text
-background.solid: $inherited.colors.background.base
-width: fill-container
-height: fill-container
-text-align: center
-role: $inherited.types.copy-regular
-padding-vertical.px: 32
-
-;; =============================================================================
-;; ================================== END ======================================
-;; =============================================================================
+-- components.faq-helper: $faqs.title
+subtitle: $faqs.subtitle
+faq-list: $faqs.faq-list
 
 -- end: faqs
